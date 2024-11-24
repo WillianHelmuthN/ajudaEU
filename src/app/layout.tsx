@@ -6,18 +6,30 @@ export const metadata: Metadata = {
     description: "ajudaEU é uma startup focada em oferecer acesso rápido, acessível e inclusivo a profissionais da saúde mental, especialmente para jovens entre 15 e 29 anos.",
 };
 
-import { ReactNode } from "react";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: ReactNode;
-}){
-    return (
-        <html>
-            <body>
-                {children}
-            </body>
-        </html>
-    )
+  children: React.ReactNode
+}) {
+  return (
+    <ClerkProvider>
+      <html lang="en">
+        <body>
+          <SignedOut>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
+  )
 }

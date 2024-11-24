@@ -1,3 +1,5 @@
+import PesonalPlans from "@/components/Plans/PesonalPlans";
+import BusinessPlans from "@/components/Plans/BusinessPlans";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -21,7 +23,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-2xl font-semibold text-gray-900">Consulta Gratuita</h3>
                 <p className="text-xl mt-4 text-gray-800">
-                    Oferecemos acesso gratuito a profissionais voluntários para até 2 consultas mensais.
+                    Oferecemos acesso gratuito a psicólogos para até 2 consultas mensais de até 30 minutos.
                 </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -38,35 +40,9 @@ export default function Home() {
             </div>
         </div>
         </section>
-        <section id="precos" className="py-20 bg-gray-50 rounded-lg shadow-md w-full">
-          <h2 className="text-4xl font-bold text-gray-900 text-center">Planos e Preços</h2>
-          <div className="mt-10 flex justify-center">
-            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-              <h3 className="text-3xl font-semibold text-gray-900">Plano Gratuito</h3>
-              <p className="mt-4 text-lg text-gray-900">Tenha acesso a profissionais gratuitamente de acordo com a disponibilidade.</p>
-              <p className="mt-4 text-4xl font-bold text-gray-900">Gratís!</p>
-              <a href="#contato" className="mt-8 inline-block bg-green-600 text-white text-lg py-3 px-6 rounded-lg hover:bg-green-700">Cadastra-se agora</a>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-              <h3 className="text-3xl font-semibold text-gray-900">Plano Básico</h3>
-              <p className="mt-4 text-lg text-gray-900">Atendimento com Custos reduzidos.</p>
-              <p className="mt-4 text-4xl font-bold text-gray-900">R$49/mês</p>
-              <a href="#contato" className="mt-8 inline-block bg-green-600 text-white text-lg py-3 px-6 rounded-lg hover:bg-green-700">Assine Agora</a>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-              <h3 className="text-3xl font-semibold text-gray-900">Plano Premium</h3>
-              <p className="mt-4 text-lg text-gray-900">Acesso ilimitado a todas as funcionalidades.</p>
-              <p className="mt-4 text-4xl font-bold text-gray-900">R$109/mês</p>
-              <a href="#contato" className="mt-8 inline-block bg-green-600 text-white text-lg py-3 px-6 rounded-lg hover:bg-green-700">Assine Agora</a>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-              <h3 className="text-3xl font-semibold text-gray-900">Plano UltraMasterPlus Megazord</h3>
-              <p className="mt-4 text-lg text-gray-900">Acesso ilimitado a todas as funcionalidades.</p>
-              <p className="mt-4 text-4xl font-bold text-gray-900">R$299/mês</p>
-              <a href="#contato" className="mt-8 inline-block bg-green-600 text-white text-lg py-3 px-6 rounded-lg hover:bg-green-700">Assine Agora</a>
-            </div>
-          </div>
-        </section>
+        <PesonalPlans />
+        <BusinessPlans />
+        
         <section id="contato" className="py-20">
           <h2 className="text-4xl font-bold text-gray-900 text-center">Entre em Contato</h2>
           <form className="mt-10 max-w-lg mx-auto">
