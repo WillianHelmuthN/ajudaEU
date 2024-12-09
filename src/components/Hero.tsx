@@ -12,7 +12,6 @@ export default function Hero() {
                 Seu navegador não suporta o elemento de vídeo.
             </video>
 
-            {/* Sobreposição escura */}
             <div className="absolute inset-0 bg-black opacity-60"></div>
 
             <div className="relative z-10 flex flex-col items-center justify-center h-full p-8">
