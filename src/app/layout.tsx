@@ -4,6 +4,9 @@ import "./global.css";
 export const metadata: Metadata = {
     title: "ajudaEU",
     description: "ajudaEU é uma startup focada em oferecer acesso rápido, acessível e inclusivo a profissionais da saúde mental, especialmente para jovens entre 15 e 29 anos.",
+    icons: {
+      icon: "/icon.png",
+    }
 };
 
 import {
