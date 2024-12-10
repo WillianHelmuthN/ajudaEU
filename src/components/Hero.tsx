@@ -1,6 +1,11 @@
+/**
+ * Componente que carrega o banner principal da página, com o vídeo de fundo e o texto de boas-vindas.
+ * @returns {JSX.Element} O componente Hero.
+ */
 export default function Hero() {
     return (
         <section className="relative h-screen text-white">
+            {/* Vídeo de fundo */}
             <video
                 autoPlay
                 loop
@@ -8,6 +13,7 @@ export default function Hero() {
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover"
             >
+                {/* Para modificar o vídeo basta substituir o arquivo Banner.mp4 na pasta public */}
                 <source src="Banner.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
             </video>

@@ -1,3 +1,20 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "require-jsdoc": "warn",
+    "valid-jsdoc": [
+      "warn",
+      {
+        "requireReturn": false,
+        "requireReturnDescription": false,
+        "requireParamDescription": false
+      }
+    ],
+    "prettier/prettier": "error"
+  }
 }
