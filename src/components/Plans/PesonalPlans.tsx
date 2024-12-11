@@ -3,7 +3,7 @@ import LearMorePlans from "./LearMorePlans";
 export default function PesonalPlans() {
     return (
 
-        <section id="precos" className="py-20 bg-gray-50 rounded-lg shadow-md w-full">
+        <section id="planos" className="py-20 bg-gray-50 rounded-lg shadow-md w-full">
           <h2 className="text-4xl font-bold text-gray-900 text-center">Planos Individuais</h2>
           <div className="mt-10 flex justify-center">
             <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
