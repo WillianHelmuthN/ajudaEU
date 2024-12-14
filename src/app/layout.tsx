@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./global.css";
 import { ClerkProvider, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Header from "@/components/PageLayout/Header";
+import Footer from "@/components/PageLayout/Footer";
 
 export const metadata: Metadata = {
   title: "ajudaEU",
@@ -24,11 +26,13 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
+          <Header />
           <SignedOut></SignedOut>
           <SignedIn>
             <UserButton />
           </SignedIn>
           {children}
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

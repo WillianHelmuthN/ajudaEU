@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 export default function Home() {
   return (
     <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center">
-      <Header />
       <main className="flex-grow w-full">
         <Hero />
         <div className="flex-grow container mx-auto px-4">
@@ -59,7 +58,6 @@ export default function Home() {
         </div>
         
       </main>
-      <Footer />
     </div>
   );
 }

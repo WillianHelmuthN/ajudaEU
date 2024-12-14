@@ -19,9 +19,11 @@ export default function Header() {
       <header className="w-full py-4 bg-pink-300 shadow-md">
         <nav className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <div className="text-black text-2xl sm:text-4xl font-bold">
+          <Link
+            href="/" // Link para a página inicial
+            className="text-black text-2xl sm:text-4xl font-bold">
             ajudaEU
-          </div>
+          </Link>
 
           {/* Botão de Menu */}
           <button
@@ -63,7 +65,30 @@ export default function Header() {
                 Cadastre-se
               </Link>
             </li>
-            {/* Adicione mais itens de menu aqui */}
+            <li className="text-center sm:text-left">
+              <Link
+                href="/plans"
+                className="block py-2 text-gray-800 hover:text-black transition-colors"
+              >
+                Planos
+              </Link>
+            </li>
+            <li className="text-center sm:text-left">
+              <Link
+                href="/contact"
+                className="block py-2 text-gray-800 hover:text-black transition-colors"
+              >
+                Contato
+              </Link>
+            </li>
+            <li className="text-center sm:text-left">
+              <Link
+                href="/about"
+                className="block py-2 text-gray-800 hover:text-black transition-colors"
+              >
+                Sobre
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

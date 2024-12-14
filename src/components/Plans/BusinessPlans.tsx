@@ -1,4 +1,4 @@
-export default function PesonalPlans() {
+export default function BusinesslPlans() {
     return (
         <section id="precos" className="py-20 bg-gray-50 rounded-lg shadow-md w-full">
           <h2 className="text-4xl font-bold text-gray-900 text-center">Planos Empresarias</h2>
