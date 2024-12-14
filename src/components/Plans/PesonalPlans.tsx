@@ -1,5 +1,4 @@
 import CardsPlans from "./CardsPlans";
-import LearMorePlans from "./LearMorePlans";
 
 export default function PesonalPlans() {
   const plans = [
